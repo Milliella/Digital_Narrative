@@ -1,28 +1,28 @@
 const scrollElements = document.querySelectorAll(".js-scroll");
 scrollElements.forEach((el) => {
-  if(elementInView(el)){
+  if(elementInView(el, .5)){
     displayScrollElement(el)
   }
 }
 )
+window.addEventListener("scroll", throttle(handleScrollAnimation, 100));
 //display functions
 // checks whether element is in viewable area 
-function elementInView(el){
+function elementInView(el, amountInView = 1){
   const elementTop = el.getBoundingClientRect().top;
   const elementHeight = el.getBoundingClientRect().height;
   return (
-    elementTop  <= document.documentElement.
-    clientHeight && elementTop > 0
+    elementTop + elementHeight * amountInView <= document.documentElement.
+    clientHeight && elementTop + (elementHeight * amountInView) > 0
   )
 
   // checks if conenet id above viewable area
 }
-function elementOutOfView(el){
+function elementOutOfView(el) {
   const elementTop = el.getBoundingClientRect().top;
   const elementBottom = el.getBoundingClientRect().bottom;
   return(
-    elementTop >= document.documentElement.clientHeight || elementBottom
-    < 0
+    elementTop >= document.documentElement.clientHeight || elementBottom < 0
   )
 
 }
@@ -33,6 +33,16 @@ function displayScrollElement(el){
 // hide elements
 function hideScrollElement(el){
   el.classList.remove("scrolled")
+}
+function handleScrollAnimation(){
+  scrollElements.forEach((el) =>{
+    if(elementInView(el, .5)){
+      displayScrollElement(el)
+    }else if(elementOutOfView(el)){
+      hideScrollElement(el)
+    }
+  }
+  )
 }
 //UTILITY
 // throttle - fn = function to call, wait = interval in ms

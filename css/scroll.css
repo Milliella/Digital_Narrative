@@ -39,11 +39,32 @@ header{
 #content4{
     background-color: cornflowerblue;
 }
+#content5{
+    background-color: rgb(22, 48, 39);
+}
+#content6{
+    background-color: greenyellow;
+}
 .js-scroll{
     opacity: 0;
 }
 .scrolled.fade-in{
-    animation: fade-in ease-in-out both;
+    animation: fade-in 1s ease-in-out both;
+}
+.scrolled.slide-left{
+    animation:slide-in-left 1s ease-in-out both;
+}
+.scrolled.slide-right{
+    animation: slide-in-right 1s ease-in-out both;
+}
+.scrolled.slide-bottom{
+    animation: slide-in-bottom 1s ease-in-out both;
+}
+.scrolled.slide-bottom-zig-zag{
+    animation: slide-in-bottom-zig-zag 2s ease-in both;
+}
+.scrolled.rotate{
+    animation: rotate 1s ease-in both;
 }
 /* keyframe aimations */
 @keyframes fade-in{
@@ -51,6 +72,65 @@ header{
         opacity: 0;
     }
     100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom-zig-zag{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    33%{
+        transform: translateY(-50px);
+    }
+    66%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
         opacity: 1;
     }
 }
