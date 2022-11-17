@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(228, 247, 197);
+    background-color: rgb(255, 255, 255);
 }
 h1{
     font-family: monospace;
@@ -13,37 +13,47 @@ h1{
 
 }
 header{
-    height: 600px;
+    height: 850px;
     line-height: 600px;
     border: green 1px solid;
 }
 #container{
-    width: 800px;
+    width: 1520px;
+    height: 850px;
     margin-left: auto;
     margin-right: auto;
 }
 .scroll-element{
-    height: 600px;
+    height: 850px;
     line-height: 600px;
 
 }
 #content1{
     background-color: rgb(58, 114, 114);
+    background-image: url("../images/story\ of\ cece.jpg");
 }
 #content2{
     background-color: palegreen;
+    background-image: url("../images/discoveres-tinsel.jpg");
 }
 #content3{
     background-color: rgb(29, 209, 209);
+    background-image: url("../images/tinsel\ circle.jpg");
 }
 #content4{
     background-color: cornflowerblue;
+    background-image: url("../images/doesnt\ like\ me.jpg");
 }
 #content5{
     background-color: rgb(22, 48, 39);
+    background-image: url("../images/sitting\ with\ tinsel.jpg");
 }
 #content6{
     background-color: greenyellow;
+    background-image: url("../images/tinsel\ nest.jpg");
+}
+#content7{
+    background-image: url("../images/food\ pumpkin\ bed.jpg");
 }
 .js-scroll{
     opacity: 0;
