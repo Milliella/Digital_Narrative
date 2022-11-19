@@ -33,59 +33,66 @@ header{
 #story-start{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-story-start.jpg");
-    background-repeat: repeat-y;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 
 #move-in{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-first-moved-in.jpg");
-    background-repeat: repeat-y;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #dont-like{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/proto-type-doesnt-like-people.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #dont-like-me{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/doesnt\ like\ me.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #toys{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-likes-food.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #being-alone{
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-likes-being-alone.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #random-day{
     background-image: url("../images/prototype-random-day.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
+#tinsel-bought{
+    background-image: url("../images/tinsel-bought.jpg");
+    background-repeat: no-repeat;
 }
 #finds-tinsel{
     background-image: url("../images/prototype-extra-stars.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #tinsel-things{
     background-image: url("../images/what-she-did-with-tinsel.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #sit-with-tinsel{
     background-image: url("../images/prototype-sitting-in-tinsel.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #tinsel-circle{
     background-image: url("../images/prototype-tinsel-circle.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
 }
 #tinsel-nest{
     background-image: url("../images/finish-tinsel-nest.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
+#christmas{
+    background-image: url("../images/crispmas.jpg");
+    background-repeat: no-repeat;
+  
 }
 .js-scroll{
     opacity: 0;
