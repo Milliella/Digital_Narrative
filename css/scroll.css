@@ -10,6 +10,8 @@ h1{
     font-weight: 100;
     font-size: 3rem;
     text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 500px;
 
 }
 header{
@@ -28,32 +30,62 @@ header{
     line-height: 600px;
 
 }
-#content1{
-    background-color: rgb(58, 114, 114);
-    background-image: url("../images/story\ of\ cece.jpg");
+#story-start{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/prototype-story-start.jpg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
-#content2{
-    background-color: palegreen;
-    background-image: url("../images/discoveres-tinsel.jpg");
+
+#move-in{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/prototype-first-moved-in.jpg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
-#content3{
-    background-color: rgb(29, 209, 209);
-    background-image: url("../images/tinsel\ circle.jpg");
+#dont-like{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/proto-type-doesnt-like-people.jpg");
+    background-repeat: repeat-x;
 }
-#content4{
-    background-color: cornflowerblue;
+#dont-like-me{
+    background-color: rgb(255, 255, 255);
     background-image: url("../images/doesnt\ like\ me.jpg");
+    background-repeat: repeat-x;
 }
-#content5{
-    background-color: rgb(22, 48, 39);
-    background-image: url("../images/sitting\ with\ tinsel.jpg");
+#toys{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/prototype-likes-food.jpg");
+    background-repeat: repeat-x;
 }
-#content6{
-    background-color: greenyellow;
-    background-image: url("../images/tinsel\ nest.jpg");
+#being-alone{
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/prototype-likes-being-alone.jpg");
+    background-repeat: repeat-x;
 }
-#content7{
-    background-image: url("../images/food\ pumpkin\ bed.jpg");
+#random-day{
+    background-image: url("../images/prototype-random-day.jpg");
+    background-repeat: repeat-x;
+}
+#finds-tinsel{
+    background-image: url("../images/prototype-extra-stars.jpg");
+    background-repeat: repeat-x;
+}
+#tinsel-things{
+    background-image: url("../images/what-she-did-with-tinsel.jpg");
+    background-repeat: repeat-x;
+}
+#sit-with-tinsel{
+    background-image: url("../images/prototype-sitting-in-tinsel.jpg");
+    background-repeat: repeat-x;
+}
+#tinsel-circle{
+    background-image: url("../images/prototype-tinsel-circle.jpg");
+    background-repeat: repeat-x;
+}
+#tinsel-nest{
+    background-image: url("../images/finish-tinsel-nest.jpg");
+    background-repeat: repeat-x;
 }
 .js-scroll{
     opacity: 0;
