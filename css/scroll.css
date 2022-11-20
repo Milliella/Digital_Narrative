@@ -5,14 +5,33 @@
 body{
     background-color: rgb(255, 255, 255);
 }
-h1{
+/* h1{
     font-family: monospace;
     font-weight: 100;
     font-size: 3rem;
     text-align: center;
     color: rgb(0, 0, 0);
     margin-left: 500px;
+    margin-bottom: 500px;
+    position:absolute;
 
+} */
+#text1{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 35px;
+    text-align: center;
+    line-height: normal;
+}
+#text2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+}
+#text3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    margin-left: 1000px;
 }
 header{
     height: 850px;
@@ -98,7 +117,7 @@ header{
     opacity: 0;
 }
 .scrolled.fade-in{
-    animation: fade-in 1s ease-in-out both;
+    animation: fade-in 2s ease-in-out both;
 }
 .scrolled.slide-left{
     animation:slide-in-left 1s ease-in-out both;
