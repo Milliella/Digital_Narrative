@@ -60,9 +60,16 @@ body{
     
 }
 #text7{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 500px;
+    padding-right: 950px;
+    padding-top: 300px;
+    
+
 }
 #text8{
     font-family:'Noticia Text', serif;
@@ -70,29 +77,54 @@ body{
     word-wrap: break-word;
 }
 #text9{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 750px;
+    padding-left: 750px;
+    padding-bottom: 250px;
 }
 #text10{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 700px;
+    padding-left: 700px;
+    padding-top: 300px;
 }
 #text11{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 700px;
+    padding-left: 400px;
+    padding-bottom: 700px;
 }
 #text12{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 400px;
+    padding-left: 1100px;
+    padding-top: 450px;
 }
 #text13{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 750px;
+    padding-left: 700px;
+    padding-bottom: 350px;
 }
 header{
     height: 850px;
