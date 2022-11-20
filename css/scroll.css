@@ -4,34 +4,78 @@
 }
 body{
     background-color: rgb(255, 255, 255);
+    
 }
-/* h1{
-    font-family: monospace;
-    font-weight: 100;
-    font-size: 3rem;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin-left: 500px;
-    margin-bottom: 500px;
-    position:absolute;
-
-} */
 #text1{
     color: rgb(0, 0, 0);
-    font-family: monospace;
     font-size: 35px;
     text-align: center;
     line-height: normal;
+    font-family:'Noticia Text', serif;
 }
 #text2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: brown;
+    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
 }
 #text3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Noticia Text', serif;
     color: rgb(0, 0, 0);
     font-size: 35px;
     margin-left: 1000px;
+}
+#text4{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+    margin-left: 150px;
+    margin-bottom: 40px;
+}
+#text5{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text6{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+    margin-left: 600px;
+}
+#text7{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text8{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text9{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text10{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text11{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text12{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
+}
+#text13{
+    font-family:'Noticia Text', serif;
+    font-size: 35px;
+    word-wrap: break-word;
 }
 header{
     height: 850px;
