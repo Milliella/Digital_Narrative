@@ -12,11 +12,19 @@ body{
     text-align: center;
     line-height: normal;
     font-family:'Noticia Text', serif;
+    width: 500px;
+    padding-left: 950px;
+    padding-top: 300px;
 }
 #text2{
-    font-family:'Noticia Text', serif;
     color: rgb(0, 0, 0);
     font-size: 35px;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 700px;
+    padding-left: 700px;
+    padding-bottom: 300px;
 }
 #text3{
     font-family:'Noticia Text', serif;
@@ -27,20 +35,29 @@ body{
 #text4{
     font-family:'Noticia Text', serif;
     font-size: 35px;
-    word-wrap: break-word;
     margin-left: 150px;
     margin-bottom: 40px;
 }
 #text5{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
+    text-align: left;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 600px;
+    padding-left: 850px;
+    padding-top: 200px;
 }
 #text6{
-    font-family:'Noticia Text', serif;
+    color: rgb(0, 0, 0);
     font-size: 35px;
-    word-wrap: break-word;
-    margin-left: 600px;
+    text-align: center;
+    line-height: normal;
+    font-family:'Noticia Text', serif;
+    width: 500px;
+    padding-left: 950px;
+    padding-bottom: 400px;
+    
 }
 #text7{
     font-family:'Noticia Text', serif;
