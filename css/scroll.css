@@ -8,6 +8,13 @@ body {
     padding: 10px;
 
 }
+#container {
+    width: 1520px;
+    height: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* leaf falling down screen */
 #leaf {
     width: 40px;
@@ -194,13 +201,6 @@ header {
     border: green 1px solid;
 }
 
-#container {
-    width: 1520px;
-    height: 850px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .scroll-element {
     height: 850px;
     line-height: 600px;
@@ -209,7 +209,7 @@ header {
 
 #story-start {
     background-color: rgb(255, 255, 255);
-    background-image: url("../images/prototype-story-start.jpg");
+    background-image: url("../images/prototype-story-cece-colour.jpg");
     background-repeat: no-repeat;
 }
 
@@ -254,7 +254,7 @@ header {
 }
 
 #finds-tinsel {
-    background-image: url("../images/prototype-extra-stars.jpg");
+    background-image: url("../images/prototype-find-tinsel-colour.jpg");
     background-repeat: no-repeat;
 }
 
@@ -279,11 +279,16 @@ header {
 }
 
 #christmas {
-    background-image: url("../images/crispmas.jpg");
+    background-image: url("../images/chrispmas-protrotype-colour.jpg");
     background-repeat: no-repeat;
 
 }
+#irlcece {
+    background-image: url("../images/irl-cece.jpeg");
+    background-repeat: no-repeat;
+    left: 500px;
 
+}
 .js-scroll {
     opacity: 0;
 }
