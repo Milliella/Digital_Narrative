@@ -1,4 +1,8 @@
 const scrollElements = document.querySelectorAll(".js-scroll");
+const leaf = document.getElementById("leaf");
+const star = document.getElementById("star");
+const leaf2 = document.getElementById("leaf2");
+const star2 = document.getElementById("star2");
 scrollElements.forEach((el) => {
   if(elementInView(el, .5)){
     displayScrollElement(el)
@@ -6,7 +10,31 @@ scrollElements.forEach((el) => {
 }
 )
 window.addEventListener("scroll", throttle(handleScrollAnimation, 100));
+window.addEventListener("load", leafFall)
+window.addEventListener("load", starFall)
+window.addEventListener("load", leaf2Fall)
+window.addEventListener("load", star2Fall)
 //display functions
+
+function leafFall(){
+  leaf.classList.add("leaf-fall");
+  console.log("loaded")
+}
+
+function leaf2Fall(){
+  leaf2.classList.add("leaf2-fall");
+  console.log("leefs")
+}
+
+function starFall(){
+  star.classList.add("star-fall");
+  console.log("stared")
+}
+function star2Fall(){
+  star2.classList.add("star2-fall");
+  console.log("steers")
+}
+
 // checks whether element is in viewable area 
 function elementInView(el, amountInView = 1){
   const elementTop = el.getBoundingClientRect().top;
