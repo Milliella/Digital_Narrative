@@ -81,7 +81,7 @@ body {
     font-family: 'Noticia Text', serif;
     width: 700px;
     padding-left: 700px;
-    padding-bottom: 300px;
+    padding-top: 50px;
 }
 
 #text3 {
@@ -95,7 +95,7 @@ body {
     font-family: 'Noticia Text', serif;
     font-size: 35px;
     margin-left: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 #text5 {
@@ -117,7 +117,7 @@ body {
     font-family: 'Noticia Text', serif;
     width: 500px;
     padding-left: 950px;
-    padding-bottom: 400px;
+    padding-top: 220px;
 
 }
 
@@ -283,12 +283,12 @@ header {
     background-repeat: no-repeat;
 
 }
-#irlcece {
+/* #irlcece {
     background-image: url("../images/irl-cece.jpeg");
     background-repeat: no-repeat;
     left: 500px;
 
-}
+} */
 .js-scroll {
     opacity: 0;
 }
