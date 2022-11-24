@@ -100,7 +100,7 @@ function star6Fall(){
   star6.classList.add("star6-fall");
   console.log("steers")
 }
-// checks whether element is in viewable area 
+// sees if the element is currently in view
 function elementInView(el, amountInView = 1){
   const elementTop = el.getBoundingClientRect().top;
   const elementHeight = el.getBoundingClientRect().height;
@@ -119,11 +119,11 @@ function elementOutOfView(el) {
   )
 
 }
-// show element
+// display element if it is currently on the visible part of the screen
 function displayScrollElement(el){
   el.classList.add("scrolled");
 }
-// hide elements
+// hide elemnts if currently not being scrolled onto
 function hideScrollElement(el){
   el.classList.remove("scrolled")
 }
@@ -137,8 +137,7 @@ function handleScrollAnimation(){
   }
   )
 }
-//UTILITY
-// throttle - fn = function to call, wait = interval in ms
+// controls the amount of times a function can be called in an amount of time, limiting the amount of times it can happen within a specified time.
 function throttle(fn, wait){
   let inThrottle, lastFn, lastTime;
   return function() {

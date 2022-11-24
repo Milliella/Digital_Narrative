@@ -1,13 +1,16 @@
+/* selects everything, sets the margin of all the elemnts to 0 */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* styling of the main background of the webpage and the padding around the edges */
 body {
     background-color: rgb(255, 255, 255);
     padding: 10px;
 
 }
+/* dictates the size and shape of the container that the illustrations and captions will be in, setting the margin to auto will center any content inide the container using the width and height stated */
 #container {
     width: 1520px;
     height: 850px;
@@ -158,7 +161,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* leaf and star animation styles, speed at which they fall and the type of animation */
+/* leaf and star animation styles, speed at which they fall and the type of animation they're using */
 #leaf.leaf-fall {
     animation: leaf-fall 60s ease-in-out both;
 }
@@ -201,6 +204,7 @@ body {
 #star6.star6-fall {
     animation: star-fall 100s ease-in-out both;
 }
+
 /* stylng the text captions on each illustration */
 #text1 {
     color: rgb(0, 0, 0);
@@ -424,14 +428,7 @@ header {
     background-repeat: no-repeat;
 
 }
-/* #irlcece {
-    background-image: url("../images/irl-cece.jpeg");
-    background-repeat: no-repeat;
-    left: 500px;
-
-} */
-
-/* style of the different animations-  */
+/* style of the different animations (how long the action lasts, slow animation from start to finish-  */
 .js-scroll {
     opacity: 0;
 }
@@ -460,7 +457,7 @@ header {
     animation: rotate 1s ease-in both;
 }
 
-/* keyframe aimations */
+/* keyframe aimations, 0= beginning of animation 50= during animation 100= animation finished, transform is changing the style of the animation throughout the course of the animation being performed. */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -543,8 +540,7 @@ header {
     }
 }
 
-
-
+/* animations for the different leaves and stars falling down the screen */
 @keyframes star-fall {
     0% {
         transform: translateY(0);
