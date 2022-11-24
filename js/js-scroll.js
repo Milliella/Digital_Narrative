@@ -3,6 +3,10 @@ const leaf = document.getElementById("leaf");
 const star = document.getElementById("star");
 const leaf2 = document.getElementById("leaf2");
 const star2 = document.getElementById("star2");
+const leaf3 = document.getElementById("leaf3");
+const leaf4 = document.getElementById("leaf4");
+const star3 = document.getElementById("star3");
+const star4 = document.getElementById("star4");
 scrollElements.forEach((el) => {
   if(elementInView(el, .5)){
     displayScrollElement(el)
@@ -14,6 +18,10 @@ window.addEventListener("load", leafFall)
 window.addEventListener("load", starFall)
 window.addEventListener("load", leaf2Fall)
 window.addEventListener("load", star2Fall)
+window.addEventListener("load", leaf3Fall)
+window.addEventListener("load", leaf4Fall)
+window.addEventListener("load", star3Fall)
+window.addEventListener("load", star4Fall)
 //display functions
 
 function leafFall(){
@@ -26,12 +34,30 @@ function leaf2Fall(){
   console.log("leefs")
 }
 
+function leaf3Fall(){
+  leaf3.classList.add("leaf3-fall");
+  console.log("loaded")
+}
+
+function leaf4Fall(){
+  leaf4.classList.add("leaf4-fall");
+  console.log("loaded")
+}
+
 function starFall(){
   star.classList.add("star-fall");
   console.log("stared")
 }
 function star2Fall(){
   star2.classList.add("star2-fall");
+  console.log("steers")
+}
+function star3Fall(){
+  star3.classList.add("star3-fall");
+  console.log("steers")
+}
+function star4Fall(){
+  star4.classList.add("star4-fall");
   console.log("steers")
 }
 

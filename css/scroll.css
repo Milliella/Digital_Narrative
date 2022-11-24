@@ -11,57 +11,119 @@ body {
 #container {
     width: 1520px;
     height: 850px;
+    line-height: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* leaf falling down screen */
+/* leaves and stars falling down the screen style*/
 #leaf {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(160, 211, 155);
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/leef2-trans.png");
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf2 {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/leefs-trans.png");
+    position: absolute;
+    left: 150px;
+    top: 1000px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf3 {
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/leaf3-trans.png");
+    position: absolute;
+    right: 300px;
+    top: 0px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf4 {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/leaf3-trans.png");
+    position: absolute;
+    left: 320px;
+    top: 0px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#star{
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/star-trans.png");
     position: absolute;
     left: 100px;
     top: 0px;
-}
-#leaf2 {
-    width: 60px;
-    height: 60px;
-    background-color: rgb(55, 94, 51);
-    position: absolute;
-    left: 150px;
-    top: 2000px;
-}
-#star{
-    width: 60px;
-    height: 60px;
-    background-color: rgb(248, 227, 42);
-    position: absolute;
-    right: 100px;
-    top: 0px;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 #star2{
-    width: 40px;
-    height: 40px;
-    background-color: rgb(230, 160, 30);
+    width: 120px;
+    height: 120px;
+    background-image: url("../images/star-trans.png");
     position: absolute;
     right: 100px;
-    top: 2500px;
+    top: 1000px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#star3{
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/star-trans.png");
+    position: absolute;
+    right: 250px;
+    top: 1500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#star4{
+    width: 140px;
+    height: 140px;
+    background-image: url("../images/star-trans.png");
+    position: absolute;
+    left: 250px;
+    top: 1800px;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
+/* leaf and star animation styles, speed at which they fall and the type of animation */
 #leaf.leaf-fall {
-    animation: leaf-fall 40s ease-in-out both;
+    animation: leaf-fall 60s ease-in-out both;
 }
 #leaf2.leaf2-fall {
-    animation: leaf2-fall 50s ease-in-out both;
+    animation: leaf2-fall 60s ease-in-out both;
+}
+#leaf3.leaf3-fall {
+    animation: leaf-fall 50s ease-in-out both;
+}
+#leaf4.leaf4-fall {
+    animation: leaf-fall 90s ease-in-out both;
 }
 #star.star-fall {
-    animation: star-fall 50s ease-in-out both;
+    animation: star-fall 65s ease-in-out both;
 }
 #star2.star2-fall {
-    animation: star-fall 38s ease-in-out both;
+    animation: star-fall 50s ease-in-out both;
 }
-/* text captions on each illustration */
+#star3.star3-fall {
+    animation: star-fall 70s ease-in-out both;
+}
+#star4.star4-fall {
+    animation: star-fall 90s ease-in-out both;
+}
+/* stylng the text captions on each illustration */
 #text1 {
     color: rgb(0, 0, 0);
     font-size: 35px;
@@ -207,6 +269,7 @@ header {
 
 }
 
+/* importing all the illustrations into the webpage */
 #story-start {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-story-cece-colour.jpg");
@@ -289,6 +352,8 @@ header {
     left: 500px;
 
 } */
+
+/* style of the different animations-  */
 .js-scroll {
     opacity: 0;
 }
@@ -406,7 +471,7 @@ header {
     }
 
     100% {
-        transform: translateY(300vh);
+        transform: translateY(700vh);
     }
 }
 @keyframes leaf2-fall {
@@ -415,7 +480,7 @@ header {
     }
 
     100% {
-        transform: translateY(1000vh);
+        transform: translateY(700vh);
     }
 }
 
@@ -423,21 +488,30 @@ header {
     0% {
         transform: translateY(0);
     }
-    50%{
+    /* 50%{
         transform: rotate(180deg);
-    }
+    } */
     100% {
-        transform: translateY(450vh);
+        transform: translateY(700vh);
     }
 }
 @keyframes star2-fall {
     0% {
         transform: translateY(0);
     }
-    50%{
+    /* 50%{
         transform: rotate(30deg);
-    }
+    } */
     100% {
-        transform: translateY(1500vh);
+        transform: translateY(700vh);
+    }
+}
+@keyframes leaf3-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(700vh);
     }
 }
