@@ -18,11 +18,11 @@ body {
 
 /* leaves and stars falling down the screen style*/
 #leaf {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-image: url("../images/leef2-trans.png");
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 0px;
     background-size:contain;
     background-repeat: no-repeat;
@@ -54,6 +54,46 @@ body {
     position: absolute;
     left: 320px;
     top: 0px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf5 {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/leaf3-trans.png");
+    position: absolute;
+    right: 350px;
+    top: 1000px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf6 {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/trans-leaf-4.png");
+    position: absolute;
+    right: 300px;
+    top: 1200px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf7 {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/trans-leaf-4.png");
+    position: absolute;
+    left: 300px;
+    top: 1300px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#leaf8 {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/leefs-trans.png");
+    position: absolute;
+    right: 300px;
+    top: 500px;
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -97,6 +137,26 @@ body {
     background-size:contain;
     background-repeat: no-repeat;
 }
+#star5{
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/star-trans.png");
+    position: absolute;
+    left: 250px;
+    top: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+#star6{
+    width: 90px;
+    height: 90px;
+    background-image: url("../images/star-trans.png");
+    position: absolute;
+    left: 150px;
+    top: 1600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 
 /* leaf and star animation styles, speed at which they fall and the type of animation */
 #leaf.leaf-fall {
@@ -111,6 +171,18 @@ body {
 #leaf4.leaf4-fall {
     animation: leaf-fall 90s ease-in-out both;
 }
+#leaf5.leaf5-fall {
+    animation: leaf-fall 90s ease-in-out both;
+}
+#leaf6.leaf6-fall {
+    animation: leaf-fall 100s ease-in-out both;
+}
+#leaf7.leaf7-fall {
+    animation: leaf-fall 90s ease-in-out both;
+}
+#leaf8.leaf8-fall {
+    animation: leaf-fall 40s ease-in-out both;
+}
 #star.star-fall {
     animation: star-fall 65s ease-in-out both;
 }
@@ -122,6 +194,12 @@ body {
 }
 #star4.star4-fall {
     animation: star-fall 90s ease-in-out both;
+}
+#star5.star5-fall {
+    animation: star-fall 90s ease-in-out both;
+}
+#star6.star6-fall {
+    animation: star-fall 100s ease-in-out both;
 }
 /* stylng the text captions on each illustration */
 #text1 {
@@ -465,32 +543,12 @@ header {
     }
 }
 
-@keyframes leaf-fall {
-    0% {
-        transform: translateY(0);
-    }
 
-    100% {
-        transform: translateY(700vh);
-    }
-}
-@keyframes leaf2-fall {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(700vh);
-    }
-}
 
 @keyframes star-fall {
     0% {
         transform: translateY(0);
     }
-    /* 50%{
-        transform: rotate(180deg);
-    } */
     100% {
         transform: translateY(700vh);
     }
@@ -499,9 +557,56 @@ header {
     0% {
         transform: translateY(0);
     }
-    /* 50%{
-        transform: rotate(30deg);
-    } */
+    100% {
+        transform: translateY(700vh);
+    }
+}
+@keyframes star3-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(700vh);
+    }
+}
+@keyframes star4-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(700vh);
+    }
+}
+@keyframes star5-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(700vh);
+    }
+}
+@keyframes star6-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(700vh);
+    }
+}
+@keyframes leaf-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(800vh);
+    }
+}
+@keyframes leaf2-fall {
+    0% {
+        transform: translateY(0);
+    }
+
     100% {
         transform: translateY(700vh);
     }
@@ -514,4 +619,54 @@ header {
     100% {
         transform: translateY(700vh);
     }
+    
+}
+@keyframes leaf4-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(700vh);
+    }
+    
+}
+@keyframes leaf5-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10vh);
+    }
+} 
+@keyframes leaf6-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20vh);
+    }
+    
+}
+@keyframes leaf7-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10vh);
+    }
+    
+} 
+@keyframes leaf8-fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(700vh);
+    }
+    
 }

@@ -7,6 +7,12 @@ const leaf3 = document.getElementById("leaf3");
 const leaf4 = document.getElementById("leaf4");
 const star3 = document.getElementById("star3");
 const star4 = document.getElementById("star4");
+const leaf5 =  document.getElementById("leaf5");
+const leaf6 = document.getElementById("leaf6");
+const leaf7 = document.getElementById("leaf7");
+const star5 = document.getElementById("star5");
+const star6 = document.getElementById("star6");
+const leaf8 = document.getElementById("leaf8");
 scrollElements.forEach((el) => {
   if(elementInView(el, .5)){
     displayScrollElement(el)
@@ -22,6 +28,12 @@ window.addEventListener("load", leaf3Fall)
 window.addEventListener("load", leaf4Fall)
 window.addEventListener("load", star3Fall)
 window.addEventListener("load", star4Fall)
+window.addEventListener("load", leaf5Fall)
+window.addEventListener("load", leaf6Fall)
+window.addEventListener("load", leaf7Fall)
+window.addEventListener("load", star5Fall)
+window.addEventListener("load", star6Fall)
+window.addEventListener("load", leaf8Fall)
 //display functions
 
 function leafFall(){
@@ -44,6 +56,26 @@ function leaf4Fall(){
   console.log("loaded")
 }
 
+function leaf5Fall(){
+  leaf5.classList.add("leaf5-fall");
+  console.log("loaded")
+}
+
+function leaf6Fall(){
+  leaf6.classList.add("leaf6-fall");
+  console.log("loaded")
+}
+
+function leaf7Fall(){
+  leaf7.classList.add("leaf7-fall");
+  console.log("loaded")
+}
+
+function leaf8Fall(){
+  leaf8.classList.add("leaf8-fall");
+  console.log("loaded")
+}
+
 function starFall(){
   star.classList.add("star-fall");
   console.log("stared")
@@ -60,7 +92,14 @@ function star4Fall(){
   star4.classList.add("star4-fall");
   console.log("steers")
 }
-
+function star5Fall(){
+  star5.classList.add("star5-fall");
+  console.log("steers")
+}
+function star6Fall(){
+  star6.classList.add("star6-fall");
+  console.log("steers")
+}
 // checks whether element is in viewable area 
 function elementInView(el, amountInView = 1){
   const elementTop = el.getBoundingClientRect().top;
