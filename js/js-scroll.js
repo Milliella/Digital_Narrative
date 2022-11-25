@@ -1,3 +1,4 @@
+// constant elements that're always the same and link to the same thing. the leaves and stars that fall down the page.
 const scrollElements = document.querySelectorAll(".js-scroll");
 const leaf = document.getElementById("leaf");
 const star = document.getElementById("star");
@@ -13,12 +14,16 @@ const leaf7 = document.getElementById("leaf7");
 const star5 = document.getElementById("star5");
 const star6 = document.getElementById("star6");
 const leaf8 = document.getElementById("leaf8");
+
+// performes the same chosen action for everything inside the list
 scrollElements.forEach((el) => {
   if(elementInView(el, .5)){
     displayScrollElement(el)
   }
 }
 )
+
+// listen for when the webpage is loaded and reloaded, upon every new re-load everything on the list will perform its specified animation. 
 window.addEventListener("scroll", throttle(handleScrollAnimation, 100));
 window.addEventListener("load", leafFall)
 window.addEventListener("load", starFall)
@@ -34,7 +39,8 @@ window.addEventListener("load", leaf7Fall)
 window.addEventListener("load", star5Fall)
 window.addEventListener("load", star6Fall)
 window.addEventListener("load", leaf8Fall)
-//display functions
+
+// string adding the different falling elements to the classlist to be referenced to so the animations function.
 
 function leafFall(){
   leaf.classList.add("leaf-fall");
@@ -137,7 +143,7 @@ function handleScrollAnimation(){
   }
   )
 }
-// controls the amount of times a function can be called in an amount of time, limiting the amount of times it can happen within a specified time.
+// controls the amount of times a function can be performed in an amount of time / limiting the amount of times it can happen within a specified time.
 function throttle(fn, wait){
   let inThrottle, lastFn, lastTime;
   return function() {

@@ -19,7 +19,7 @@ body {
     margin-right: auto;
 }
 
-/* leaves and stars falling down the screen style*/
+/* leaves and stars falling down the screen style, no repeating the background so theyre just single images, the width and height determine the size of each one - varied sizes so they all look different*/
 #leaf {
     width: 300px;
     height: 300px;
@@ -161,7 +161,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* leaf and star animation styles, speed at which they fall and the type of animation they're using */
+/* leaf and star animation styles, speed at which they fall and the type of animation they're using for the look im going for */
 #leaf.leaf-fall {
     animation: leaf-fall 60s ease-in-out both;
 }
@@ -205,7 +205,7 @@ body {
     animation: star-fall 100s ease-in-out both;
 }
 
-/* stylng the text captions on each illustration */
+/* stylng the text captions on each illustration, the font I chose, the placement of each one on screen in relation to the illustrations, colour of the text */
 #text1 {
     color: rgb(0, 0, 0);
     font-size: 35px;
@@ -351,7 +351,7 @@ header {
 
 }
 
-/* importing all the illustrations into the webpage */
+/* importing all the illustrations into the webpage, setting them to not repeat and making the backgrouind colour white so they blend in eaily */
 #story-start {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/prototype-story-cece-colour.jpg");
@@ -540,7 +540,7 @@ header {
     }
 }
 
-/* animations for the different leaves and stars falling down the screen */
+/* animations for the different leaves and stars falling down the screen, 0= beginning of animation 100= animation complete 0 top of the page, 100 bottom of the page */
 @keyframes star-fall {
     0% {
         transform: translateY(0);
